@@ -8,20 +8,25 @@
 $white:                    #fff;
 $white-text:               #fff;
 $main-menu-btn:            #fff;
-$blue:                     #4eacdd;
-$grey-text:                #616161;
+$grey-text:                #a5a5a5;
 $light-text:               lighten($grey-text, 10%);
-$bg-wrapper:               #f4f4f4;
-$writeUs-btn:              #14af8f;
-$view-btn:                 #ea4c89;
+$headers-color:            #000;
+$bg-wrapper:               #f7f7f7;
 
 // === Typography
 
-$font-base:                "ProximaNovaRegular", sans-serif;
-$font-size-base:           16px;
-$font-size-big:            35px;
-$line-height-base:         floor(($font-size-base * 1.5));
+$font-base:                "Lato", "Arial", sans-serif;
+$font-base-p:              "LatoLight", "Arial", sans-serif;
+$font-base-h2:             "LatoBold", "Arial", sans-serif;
 
+$font-size-base:           16px;
+$font-size-big:            36px;
+$font-size-small:          14px;
 $font-size-h1:             50px;
-$font-size-h2:             40px; 
+$font-size-h1-article:     18px;
+$font-size-h2:             18px; 
+
+$line-height-base:         floor(($font-size-base * 1.1));
+$line-height-h2:           floor(($font-size-h2 * 1.7));
+
  

@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 880px;
+    background: url(../img/main-image.png) no-repeat;
+    color: $white-text;
+}
+.logo {
+
+}
+.slogan {
+    width: 60%;
+    text-align: center;
+    border: 1px solid;  
+}

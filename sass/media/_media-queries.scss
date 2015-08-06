@@ -1,118 +1,13 @@
 @media all and (max-width: 1024px) {
-    .container.header {
-        background: url("../img/iphone-5.png") no-repeat 280px 385px;
-    }
-    .main-header .slogan {
-        float: left;
-        width: 50%;
-        padding-left: 0;
-        font-size: 25px;
-    }
-    .main-header .title {
-        left: 0;
-    }
-    .container .logo {
-        left: 0;
-    }
-    .enter {
-        right: 0;
-    }
-    .download {
-        margin-right: 0;
-    }
-    .main-menu {
-        margin-left: 220px;
-        margin-top: 150px;
-    }
-    .close-btn {
-        right: 7px;
-    }
-    .content-wrapper {
-        .container {
-            background: url("../img/ipad.png") no-repeat 550px 155px;
-        }
-    }
     
-    .container.main {
-        background: url("../img/devices_02.png") no-repeat 50px 350px;
-    }
-    .container.main .content-article2 {
-        float: none;
-        width: 100%;
-    }
 }
 
 @media all and (max-width: 438px) {
-    .container.header {
-        text-align: center;
-        background: url("../img/iphone-5.png") no-repeat 45px 385px;
-    }
-    .main-header .slogan {
-        float: none;
-        width: 100%;
-        text-align: center;
-    }
-    .download {
-        display: inline-block;
-        float: none;
-        margin-top: 90px;
-    }
-    .main-menu {
-        width: 100%;
-        margin-left: 0;
-        padding-left: 36%;
-        
-        &-btn {
-            font-size: 0;
-            margin-bottom: 30px;
-        }
-        
-        &-btn::before {
-            transition: 0.5s;
-        }
-        &-btn:hover::before {
-            transform: scale(1.2);
-            background-color: lighten($blue, 25%);
-        }
-    }
-    .content-wrapper .container {
-        margin-left: 60px;
-        padding-top: 10px;
-    }
-    .container.main {
-        background: url("../img/devices_02.png") no-repeat 0px 450px;
-    }
     
-    .social-block {
-        padding-left: 30px;
-        
-        li {
-            padding-bottom: 10px;    
-        }
-    }
-    .footer-form {
-        width: 250px;
-    }
-    .footer-form label {
-        display: block;
-        margin-bottom: 20px;
-    }
-    .icon-search {
-        top: 53px;
-    }
-    .btn-up {
-        top: 39px;
-        right: 35px;
-    }   
 }
 
 @media all and (max-width: 375px) {
-    .container.header {
-        background: url("../img/iphone-5.png") no-repeat 30px 385px;
-    }
-    .download {
-        margin-top: 60px;
-    }
+    
 }
 
 

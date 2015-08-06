@@ -1,0 +1,126 @@
+/* font-family: "LatoRegular"; */
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fonts/LatoRegular/LatoRegular.eot");
+  src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoRegular/LatoRegular.woff") format("woff"), url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "LatoBold"; */
+@font-face {
+  font-family: "LatoBold";
+  src: url("../fonts/LatoBold/LatoBold.eot");
+  src: url("../fonts/LatoBold/LatoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoBold/LatoBold.woff") format("woff"), url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "LatoItalic"; */
+@font-face {
+  font-family: "LatoItalic";
+  src: url("../fonts/LatoItalic/LatoItalic.eot");
+  src: url("../fonts/LatoItalic/LatoItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoItalic/LatoItalic.woff") format("woff"), url("../fonts/LatoItalic/LatoItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "LatoLight"; */
+@font-face {
+  font-family: "LatoLight";
+  src: url("../fonts/LatoLight/LatoLight.eot");
+  src: url("../fonts/LatoLight/LatoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoLight/LatoLight.woff") format("woff"), url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "LatoBoldItalic"; */
+@font-face {
+  font-family: "LatoBoldItalic";
+  src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot");
+  src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoBoldItalic/LatoBoldItalic.woff") format("woff"), url("../fonts/LatoBoldItalic/LatoBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "LatoLightItalic"; */
+@font-face {
+  font-family: "LatoLightItalic";
+  src: url("../fonts/LatoLightItalic/LatoLightItalic.eot");
+  src: url("../fonts/LatoLightItalic/LatoLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoLightItalic/LatoLightItalic.woff") format("woff"), url("../fonts/LatoLightItalic/LatoLightItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+html,
+body {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 17px;
+  color: #a5a5a5; }
+
+h1 {
+  font-family: "LatoBold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000; }
+
+h2 {
+  font-family: "LatoBold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000; }
+
+p {
+  font-family: "LatoLight", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 17px; }
+
+.slogan {
+  font-family: "TimesNewRoman", serif;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 35px; }
+
+.slogan-big {
+  font-family: "LatoBold", "Arial", sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 100px; }
+
+.wrapper {
+  border: 1px dashed black;
+  max-width: 1200px;
+  padding: 0 12%;
+  margin: 0 auto; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 880px;
+  background: url(../img/main-image.png) no-repeat;
+  color: #fff; }
+
+.slogan {
+  width: 60%;
+  text-align: center;
+  border: 1px solid; }
+
+.main-navigation {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0; }
+  .main-navigation li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px; }
+    .main-navigation li a {
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 30px;
+      color: #fff; }
+    .main-navigation li:last-child a {
+      width: 30px;
+      height: 30px;
+      font-size: 0;
+      border: 1px solid; }
+
+/*# sourceMappingURL=main.css.map */
