@@ -1,0 +1,27 @@
+//
+// Variables
+//--------------------------------------------
+
+
+// === Colors
+
+$white:                    #fff;
+$white-text:               #fff;
+$main-menu-btn:            #fff;
+$blue:                     #4eacdd;
+$grey-text:                #616161;
+$light-text:               lighten($grey-text, 10%);
+$bg-wrapper:               #f4f4f4;
+$writeUs-btn:              #14af8f;
+$view-btn:                 #ea4c89;
+
+// === Typography
+
+$font-base:                "ProximaNovaRegular", sans-serif;
+$font-size-base:           16px;
+$font-size-big:            35px;
+$line-height-base:         floor(($font-size-base * 1.5));
+
+$font-size-h1:             50px;
+$font-size-h2:             40px; 
+ 
