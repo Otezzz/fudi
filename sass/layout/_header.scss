@@ -4,11 +4,14 @@
     justify-content: center;
     align-items: center;
     min-height: 880px;
+    margin-bottom: 35px;
     background: url(../img/main-image.png) no-repeat;
     color: $white-text;
 }
 .logo {
-
+    position: absolute;
+    top: 0;
+    left: 179px;
 }
 .slogan {
     width: 60%;

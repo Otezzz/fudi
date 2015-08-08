@@ -28,3 +28,7 @@
 	top: $top;
 	left: $left;
 }
+@mixin proportion($width) {
+	width: $width;
+	height: ($width * 0.3);
+}

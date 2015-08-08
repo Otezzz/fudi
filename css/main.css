@@ -44,7 +44,7 @@ html,
 body {
   font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 17px;
+  line-height: 25px;
   color: #a5a5a5; }
 
 h1 {
@@ -62,7 +62,7 @@ h2 {
 p {
   font-family: "LatoLight", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 17px; }
+  line-height: 25px; }
 
 .slogan {
   font-family: "TimesNewRoman", serif;
@@ -90,8 +90,14 @@ p {
   justify-content: center;
   align-items: center;
   min-height: 880px;
+  margin-bottom: 35px;
   background: url(../img/main-image.png) no-repeat;
   color: #fff; }
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 179px; }
 
 .slogan {
   width: 60%;
@@ -101,7 +107,7 @@ p {
 .main-navigation {
   position: absolute;
   top: 20px;
-  right: 100px;
+  right: 180px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -122,5 +128,128 @@ p {
       height: 30px;
       font-size: 0;
       border: 1px solid; }
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between; }
+  .menu section {
+    width: 30%;
+    text-align: center; }
+    .menu section .menu-icon {
+      width: 105px;
+      height: 105px;
+      margin: 0 auto;
+      border: 1px solid black; }
+
+.mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-height: 700px;
+  padding-top: 180px;
+  background: #f7f7f7 url("../img/i-phone.png") no-repeat 180px 120px; }
+  .mobile-article {
+    width: 40%; }
+
+.comments {
+  min-height: 462px;
+  margin-bottom: 70px;
+  background: url("../img/bg-purple.png") no-repeat;
+  background-size: 100% 107%; }
+
+.meals {
+  max-width: 1600px;
+  padding: 0; }
+  .meals-header {
+    text-align: center;
+    margin-bottom: 50px; }
+  .meals-menu {
+    display: flex;
+    flex-wrap: wrap; }
+    .meals-menu a {
+      display: block;
+      width: 310px;
+      height: 140px;
+      padding: 65px 5px 20px 5px;
+      text-decoration: none;
+      text-align: center;
+      font-family: "LatoBold", "Arial", sans-serif;
+      font-size: 36px;
+      color: #fff;
+      text-transform: uppercase;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+    .meals-menu a:hover {
+      border-radius: 50%; }
+
+.recipes {
+  font-family: "Times New Roman", serif;
+  font-size: 14px;
+  font-style: italic; }
+
+.meal-1 {
+  background: url(../img/m-italian.png) no-repeat; }
+.meal-2 {
+  background: url(../img/m-indian.png) no-repeat; }
+.meal-3 {
+  background: url(../img/m-french.png) no-repeat; }
+.meal-4 {
+  background: url(../img/m-steak.png) no-repeat; }
+.meal-5 {
+  background: url(../img/m-sea.png) no-repeat; }
+.meal-6 {
+  background: url(../img/m-sushi.png) no-repeat; }
+.meal-7 {
+  background: url(../img/m-mexican.png) no-repeat; }
+.meal-8 {
+  background: url(../img/m-china.png) no-repeat; }
+.meal-9 {
+  background: url(../img/m-pizza.png) no-repeat; }
+.meal-10 {
+  background: url(../img/m-american.png) no-repeat; }
+
+.statistic-block {
+  display: flex;
+  padding: 50px 0; }
+
+.statistic {
+  width: 20%;
+  text-align: center; }
+
+.countings {
+  font-family: "LatoBold", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #000; }
+  .countings-name {
+    font-size: 14px; }
+
+.footer {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f7f7f7; }
+  .footer .copyrights {
+    width: 50%;
+    font-family: "LatoLight", "Arial", sans-serif;
+    font-size: 14px; }
+  .footer .developer {
+    width: 50%;
+    text-align: right;
+    font-family: "LatoLight", "Arial", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase; }
+
+.site {
+  font-weight: bold;
+  text-decoration: none;
+  color: black; }
+  .site:hover {
+    text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */
