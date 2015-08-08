@@ -9,9 +9,24 @@
         text-align: center;
         
         .menu-icon {
-            @include size(105px, 105px);
+            @include size(100px, 100px);
             margin: 0 auto;
-            border: 1px solid black;
+            border: 2px solid black;
+            border-radius: 50%;
+            background: url("../img/VectorSmartObject.svg") no-repeat 15px 10px;
+            background-size: 70px 70px;
+        }
+    }
+    .section2 {
+        .menu-icon {
+            background: url("../img/VectorSmartObject2.svg") no-repeat 15px 15px;
+        background-size: 70px 70px;
+        }
+    }
+    .section3 {
+        .menu-icon {
+            background: url("../img/VectorSmartObject3.svg") no-repeat 15px 10px;
+        background-size: 70px 70px;
         }
     }
 }
@@ -26,10 +41,31 @@
     &-article {
         width: 40%;
     }
+    
+    a {
+        display: inline-block;
+        font-size: 0;
+        transition: 0.5s;
+    }
+    
+    a:hover {
+        transform: scale(1.2);
+    }
 }
+.app-store {
+    @include size(112px, 39px);
+    background: url("../img/icon-app.png");
+    margin-right: 6px;
+}
+.google-play {
+    @include size(120px, 39px);
+    background: url("../img/icon-gp.png");
+}
+
 .comments {
-    min-height: 462px;
+    min-height: 382px;
     margin-bottom: 70px;
+    padding-top: 80px;
     background:url("../img/bg-purple.png") no-repeat; 
     background-size: 100% 107%;
 }
@@ -119,6 +155,7 @@
     text-align: center;
 }
 .countings {
+    margin-bottom: 10px;
     font-family: $font-base-h2;
     font-size: $font-size-big;
     font-weight: 700;
@@ -126,6 +163,7 @@
     
     &-name {
         font-size: $font-size-small;
+        font-style: italic;
     }
 }
 .footer {

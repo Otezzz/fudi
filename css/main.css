@@ -101,8 +101,10 @@ p {
 
 .slogan {
   width: 60%;
-  text-align: center;
-  border: 1px solid; }
+  text-align: center; }
+
+.menu-icon {
+  background: url("../img/enter-btn.png") no-repeat; }
 
 .main-navigation {
   position: absolute;
@@ -121,13 +123,82 @@ p {
       text-decoration: none;
       text-transform: uppercase;
       font-size: 14px;
-      line-height: 30px;
+      line-height: 10px;
       color: #fff; }
+    .main-navigation li a:hover {
+      text-decoration: underline; }
     .main-navigation li:last-child a {
-      width: 30px;
-      height: 30px;
-      font-size: 0;
-      border: 1px solid; }
+      width: 15px;
+      height: 10px;
+      font-size: 0; }
+
+.comments-slider {
+  position: relative;
+  min-height: 350px;
+  padding-bottom: 40px; }
+  .comments-slider input[type="radio"] {
+    display: none; }
+
+.comments-slide {
+  text-align: center; }
+  .comments-slide:nth-child(2) .avatar {
+    background: url(../img/avatar-2.jpg) no-repeat; }
+  .comments-slide:nth-child(3) .avatar {
+    background: url(../img/avatar-3.jpg) no-repeat; }
+  .comments-slide blockquote {
+    font-family: "LatoLight", "Arial", sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 36px; }
+  .comments-slide .comments-name {
+    font-style: italic; }
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border: 5px solid;
+  border-radius: 50%;
+  background: url(../img/avatar.png) no-repeat -5px -10px; }
+
+.slide-paginator {
+  position: absolute;
+  bottom: 60px;
+  right: 50%;
+  width: 200px;
+  height: 15px;
+  margin-right: -100px;
+  text-align: center;
+  z-index: 1000; }
+
+.slide-paginator label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 3px;
+  background: white;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer; }
+
+#btn-1:checked ~ .slide-paginator label[for="btn-1"],
+#btn-2:checked ~ .slide-paginator label[for="btn-2"],
+#btn-3:checked ~ .slide-paginator label[for="btn-3"] {
+  background-color: rgba(255, 255, 255, 0.2); }
+
+.comments-slide {
+  display: none;
+  overflow: hidden; }
+
+#btn-1:checked ~ .slider-box .comments-slide:nth-child(1) {
+  display: block; }
+
+#btn-2:checked ~ .slider-box .comments-slide:nth-child(2) {
+  display: block; }
+
+#btn-3:checked ~ .slider-box .comments-slide:nth-child(3) {
+  display: block; }
 
 .menu {
   display: flex;
@@ -138,10 +209,19 @@ p {
     width: 30%;
     text-align: center; }
     .menu section .menu-icon {
-      width: 105px;
-      height: 105px;
+      width: 100px;
+      height: 100px;
       margin: 0 auto;
-      border: 1px solid black; }
+      border: 2px solid black;
+      border-radius: 50%;
+      background: url("../img/VectorSmartObject.svg") no-repeat 15px 10px;
+      background-size: 70px 70px; }
+  .menu .section2 .menu-icon {
+    background: url("../img/VectorSmartObject2.svg") no-repeat 15px 15px;
+    background-size: 70px 70px; }
+  .menu .section3 .menu-icon {
+    background: url("../img/VectorSmartObject3.svg") no-repeat 15px 10px;
+    background-size: 70px 70px; }
 
 .mobile {
   display: flex;
@@ -152,10 +232,28 @@ p {
   background: #f7f7f7 url("../img/i-phone.png") no-repeat 180px 120px; }
   .mobile-article {
     width: 40%; }
+  .mobile a {
+    display: inline-block;
+    font-size: 0;
+    transition: 0.5s; }
+  .mobile a:hover {
+    transform: scale(1.2); }
+
+.app-store {
+  width: 112px;
+  height: 39px;
+  background: url("../img/icon-app.png");
+  margin-right: 6px; }
+
+.google-play {
+  width: 120px;
+  height: 39px;
+  background: url("../img/icon-gp.png"); }
 
 .comments {
-  min-height: 462px;
+  min-height: 382px;
   margin-bottom: 70px;
+  padding-top: 80px;
   background: url("../img/bg-purple.png") no-repeat;
   background-size: 100% 107%; }
 
@@ -222,12 +320,14 @@ p {
   text-align: center; }
 
 .countings {
+  margin-bottom: 10px;
   font-family: "LatoBold", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 700;
   color: #000; }
   .countings-name {
-    font-size: 14px; }
+    font-size: 14px;
+    font-style: italic; }
 
 .footer {
   display: flex;

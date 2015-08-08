@@ -15,14 +15,16 @@
             text-decoration: none;
             text-transform: uppercase;
             font-size: $font-size-small;
-            line-height: 30px;
+            line-height: 10px;
             color: $white-text;
         }
+        a:hover {
+            text-decoration: underline;
+        }
         &:last-child a {
-            width: 30px;
-            height: 30px;
+            width: 15px;
+            height: 10px;
             font-size: 0;
-            border: 1px solid;
         }
     } 
 }

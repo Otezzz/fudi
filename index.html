@@ -15,7 +15,7 @@
                     <ul class="main-navigation">
                         <li><a href="">Вход</a></li>
                         <li><a href="">Регистрация</a></li>
-                        <li><a href="">Меню</a></li>
+                        <li><a href="" class="menu-icon"><span></span></a></li>
                     </ul>
                 <div class="slogan">Найди свой любимый <span class="slogan-big">рецепт</span></div>
             </div>
@@ -49,28 +49,30 @@
             </div>
             <div class="wrapper comments">
                 <div class="comments-slider">
-                    <input type="radio" id="btn-1" name="toggle"></input>
-                    <input type="radio" id="btn-2" name="toggle"></input>
+                    <input type="radio" id="btn-1" name="toggle" ></input>
+                    <input type="radio" id="btn-2" name="toggle" checked></input>
                     <input type="radio" id="btn-3" name="toggle"></input>
                     <div class="slide-paginator">
                         <label for="btn-1"></label>
                         <label for="btn-2"></label>
                         <label for="btn-3"></label>
                     </div>
-                    <div class="comments-slide">
-                        <div class="avatar"></div>
-                        <blockquote class="comments-quote">Я так счастлив, что нашел этот рецепт, и он сделал мою холостяцкую жизнь проще. Спасибо большое!</blockquote>
-                        <span class="comments-name">Иван Козлов</span>
-                    </div>
-                    <div class="comments-slide" style="display: none;">
-                        <div class="avatar"></div>
-                        <blockquote class="comments-quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ea!</blockquote>
-                        <span class="comments-name">Lorem ipsum</span>
-                    </div>
-                    <div class="comments-slide" style="display: none;">
-                        <div class="avatar"></div>
-                        <blockquote class="comments-quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet vero quasi, dolores voluptatum assumenda soluta quam laudantium repellat quia quod tenetur voluptatibus iure perspiciatis eum.</blockquote>
-                        <span class="comments-name">Lorem ipsum</span>
+                    <div class="slider-box">
+                        <div class="comments-slide">
+                            <div class="avatar"></div>
+                            <blockquote class="comments-quote">&#8220;Я так счастлив, что нашел этот рецепт, и он сделал мою холостяцкую жизнь проще. Спасибо большое!&#8221;</blockquote>
+                            <span class="comments-name">Иван Козлов</span>
+                        </div>
+                        <div class="comments-slide">
+                            <div class="avatar"></div>
+                            <blockquote class="comments-quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ea!</blockquote>
+                            <span class="comments-name">Lorem ipsum</span>
+                        </div>
+                        <div class="comments-slide">
+                            <div class="avatar"></div>
+                            <blockquote class="comments-quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet vero quasi, dolores voluptatum assumenda soluta quam laudantium repellat quia quod tenetur voluptatibus iure perspiciatis eum.</blockquote>
+                            <span class="comments-name">Lorem ipsum</span>
+                        </div>
                     </div>
                 </div>
             </div>

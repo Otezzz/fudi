@@ -1,0 +1,76 @@
+.comments-slider {
+    position: relative;
+    min-height: 350px;
+    padding-bottom: 40px;
+    
+    input[type="radio"] {
+        display: none;
+    }
+}
+.comments-slide {
+    text-align: center;
+    
+    &:nth-child(2) .avatar {
+        background: url(../img/avatar-2.jpg) no-repeat;    
+    }
+    &:nth-child(3) .avatar {
+        background: url(../img/avatar-3.jpg) no-repeat;
+    }
+    
+    blockquote {
+        font-family: $font-base-p;
+        font-weight: 100;
+        font-size: 30px;
+        font-style: italic;
+        line-height: 36px;
+    }
+    .comments-name {
+        font-style: italic;
+    }
+}
+.avatar {
+    @include size(100px, 100px);
+    margin: 0 auto;
+    border: 5px solid;
+    border-radius: 50%;
+    background: url(../img/avatar.png) no-repeat -5px -10px;
+}
+
+.slide-paginator {
+    position: absolute;
+    bottom: 60px;
+    right: 50%;
+    width: 200px;
+    height: 15px;
+    margin-right: -100px;
+    text-align: center;
+    z-index:1000;
+}
+.slide-paginator label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+    background: white;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#btn-1:checked ~ .slide-paginator label[for="btn-1"],
+#btn-2:checked ~ .slide-paginator label[for="btn-2"],
+#btn-3:checked ~ .slide-paginator label[for="btn-3"] { 
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.comments-slide {
+    display: none;
+    overflow: hidden;
+}
+#btn-1:checked ~ .slider-box .comments-slide:nth-child(1) { 
+    display: block;
+}
+#btn-2:checked ~ .slider-box .comments-slide:nth-child(2) { 
+    display: block;
+}
+#btn-3:checked ~ .slider-box .comments-slide:nth-child(3) { 
+    display: block;
+}

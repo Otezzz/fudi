@@ -15,6 +15,14 @@
 }
 .slogan {
     width: 60%;
-    text-align: center;
-    border: 1px solid;  
+    text-align: center;  
 }
+.menu-icon {
+    background: url("../img/enter-btn.png") no-repeat;
+    &:hover{
+        
+    }
+}
+
+
+
