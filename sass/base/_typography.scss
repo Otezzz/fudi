@@ -70,12 +70,16 @@ h1 {
     font-size: $font-size-h1-article;
     line-height: $line-height-h2;
     color: $headers-color;
+    margin: 0;
+    padding: 0;
 }
 h2 {
     font-family: $font-base-h2;
     font-size: $font-size-h2;
     line-height: $line-height-h2;
     color: $headers-color;
+    margin: 0;
+    padding: 0;
 }
 p {
     font-family: $font-base-p;

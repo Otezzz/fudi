@@ -51,13 +51,17 @@ h1 {
   font-family: "LatoBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  color: #000; }
+  color: #000;
+  margin: 0;
+  padding: 0; }
 
 h2 {
   font-family: "LatoBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  color: #000; }
+  color: #000;
+  margin: 0;
+  padding: 0; }
 
 p {
   font-family: "LatoLight", "Arial", sans-serif;
@@ -79,10 +83,34 @@ p {
   line-height: 100px; }
 
 .wrapper {
-  border: 1px dashed black;
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 0 12%;
   margin: 0 auto; }
+
+.footer {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f7f7f7; }
+
+.copyrights {
+  width: 50%;
+  font-family: "LatoLight", "Arial", sans-serif;
+  font-size: 14px; }
+
+.developer {
+  width: 50%;
+  text-align: right;
+  font-family: "LatoLight", "Arial", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.site {
+  font-weight: bold;
+  text-decoration: none;
+  color: black; }
+  .site:hover {
+    text-decoration: underline; }
 
 .header {
   display: flex;
@@ -90,8 +118,9 @@ p {
   justify-content: center;
   align-items: center;
   min-height: 880px;
-  margin-bottom: 35px;
+  margin-bottom: 100px;
   background: url(../img/main-image.png) no-repeat;
+  background-size: cover;
   color: #fff; }
 
 .logo {
@@ -105,6 +134,23 @@ p {
 
 .menu-icon {
   background: url("../img/enter-btn.png") no-repeat; }
+
+.enter-mobile {
+  display: none;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -60px;
+  width: 120px;
+  height: 50px;
+  border: 2px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 50px;
+  border-radius: 4px; }
 
 .main-navigation {
   position: absolute;
@@ -204,7 +250,8 @@ p {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 80px; }
   .menu section {
     width: 30%;
     text-align: center; }
@@ -215,13 +262,19 @@ p {
       border: 2px solid black;
       border-radius: 50%;
       background: url("../img/VectorSmartObject.svg") no-repeat 15px 10px;
-      background-size: 70px 70px; }
+      background-size: 70%; }
   .menu .section2 .menu-icon {
-    background: url("../img/VectorSmartObject2.svg") no-repeat 15px 15px;
-    background-size: 70px 70px; }
+    background: url("../img/VectorSmartObject2.svg") no-repeat 15px 30px;
+    background-size: 70%; }
   .menu .section3 .menu-icon {
     background: url("../img/VectorSmartObject3.svg") no-repeat 15px 10px;
-    background-size: 70px 70px; }
+    background-size: 70%; }
+
+.underline {
+  display: block;
+  margin: 0 auto;
+  width: 88px;
+  border-top: 1px solid red; }
 
 .mobile {
   display: flex;
@@ -232,6 +285,8 @@ p {
   background: #f7f7f7 url("../img/i-phone.png") no-repeat 180px 120px; }
   .mobile-article {
     width: 40%; }
+    .mobile-article .underline {
+      margin: 0; }
   .mobile a {
     display: inline-block;
     font-size: 0;
@@ -258,17 +313,17 @@ p {
   background-size: 100% 107%; }
 
 .meals {
-  max-width: 1600px;
+  max-width: 1700px;
   padding: 0; }
   .meals-header {
-    text-align: center;
-    margin-bottom: 50px; }
+    text-align: center; }
   .meals-menu {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-top: 50px; }
     .meals-menu a {
       display: block;
-      width: 310px;
+      width: 322px;
       height: 140px;
       padding: 65px 5px 20px 5px;
       text-decoration: none;
@@ -276,14 +331,16 @@ p {
       font-family: "LatoBold", "Arial", sans-serif;
       font-size: 36px;
       color: #fff;
-      text-transform: uppercase;
+      background-size: cover;
+      text-transform: uppercase; }
+    .meals-menu a:hover {
+      border-radius: 50%;
+      -webkit-filter: saturate(150%);
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
       -ms-transition: all 0.5s ease;
       transition: all 0.5s ease; }
-    .meals-menu a:hover {
-      border-radius: 50%; }
 
 .recipes {
   font-family: "Times New Roman", serif;
@@ -329,27 +386,119 @@ p {
     font-size: 14px;
     font-style: italic; }
 
-.footer {
-  display: flex;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background: #f7f7f7; }
-  .footer .copyrights {
-    width: 50%;
-    font-family: "LatoLight", "Arial", sans-serif;
-    font-size: 14px; }
-  .footer .developer {
-    width: 50%;
-    text-align: right;
-    font-family: "LatoLight", "Arial", sans-serif;
-    font-size: 14px;
-    text-transform: uppercase; }
+@media all and (max-width: 1024px) {
+  .mobile {
+    padding-top: 50px;
+    background-size: 38%;
+    background-position: 180px 191px; }
 
-.site {
-  font-weight: bold;
-  text-decoration: none;
-  color: black; }
-  .site:hover {
-    text-decoration: underline; }
+  .meals-menu {
+    margin-top: 1px; }
+    .meals-menu a {
+      width: 194px;
+      height: 66px;
+      padding: 40px 5px 35px 5px;
+      font-size: 23px; }
+    .meals-menu a:nth-child(2n) {
+      border-left: 0; }
+
+  .underline {
+    margin-bottom: 50px; } }
+@media all and (max-width: 375px) {
+  .header {
+    min-height: 562px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    background: url(../img/bg-mobile.png) no-repeat;
+    background-size: contain; }
+
+  .enter-mobile {
+    display: block; }
+
+  .main-navigation {
+    display: none; }
+
+  .slogan {
+    width: 100%;
+    font-size: 22px; }
+    .slogan-big {
+      font-size: 60px; }
+
+  .logo {
+    left: 112px;
+    top: 98px; }
+
+  .menu {
+    display: block;
+    padding-bottom: 40px; }
+    .menu section {
+      width: 100%; }
+
+  .mobile {
+    display: none; }
+
+  .comments {
+    margin-bottom: 0; }
+    .comments-slide .comments-quote {
+      margin: 0;
+      padding: 0;
+      font-size: 17px;
+      line-height: 25px; }
+
+  .meals-header {
+    display: none; }
+  .meals .underline {
+    display: none; }
+
+  .meals-menu {
+    margin-top: 1px; }
+    .meals-menu a {
+      width: 175px;
+      height: 80px;
+      padding: 32px 5px 10px 5px;
+      border: 1px solid #fff;
+      border-top: 0;
+      font-size: 18px; }
+    .meals-menu a:nth-child(2n) {
+      border-left: 0; }
+
+  .recipes {
+    font-size: 11px; }
+
+  .statistic-block {
+    display: none; }
+
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+  .developer {
+    display: none; }
+
+  .copyrights {
+    width: 100%;
+    text-align: center; } }
+@media all and (max-width: 360px) {
+  .header {
+    min-height: 535px; }
+
+  .logo {
+    left: 100px;
+    top: 98px; }
+
+  .meals-menu a {
+    width: 167px;
+    height: 80px; } }
+@media all and (max-width: 320px) {
+  .header {
+    min-height: 465px; }
+
+  .logo {
+    left: 87px;
+    top: 35px; }
+
+  .meals-menu a {
+    width: 147px;
+    height: 70px; } }
 
 /*# sourceMappingURL=main.css.map */

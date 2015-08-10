@@ -6,18 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/normalize.css" type="text/css" rel="stylesheet">
         <link href="css/main.css" type="text/css" rel="stylesheet">
-        <title></title>
+        <title>Нямка</title>
     </head>
     <body>
        <header class="main-header">
             <div class="wrapper header">
-                <div class="logo"><a href=""><img src="../img/logo.png" alt=""></a></div>
+                <div class="logo">
+                    <a href="">
+                        <picture>
+                            <source media="(max-width:375px)" srcset="img/logo-mobile2.png">
+                            <img src="img/logo.png" alt="logo">
+                        </picture>    
+                    </a>
+                </div>
                     <ul class="main-navigation">
                         <li><a href="">Вход</a></li>
                         <li><a href="">Регистрация</a></li>
                         <li><a href="" class="menu-icon"><span></span></a></li>
                     </ul>
                 <div class="slogan">Найди свой любимый <span class="slogan-big">рецепт</span></div>
+                <a href="#" class="enter-mobile">Входи!</a>
             </div>
        </header>
 
@@ -26,22 +34,26 @@
                 <section class="section1">
                     <div class="menu-icon"></div>
                     <h2>Обзор блюд</h2>
+                    <span class="underline"></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe culpa deleniti velit sapiente voluptatibus reprehenderit error.</p>
                 </section>
                 <section class="section2">
                     <div class="menu-icon"></div>
                     <h2>Выбор продуктов</h2>
+                    <span class="underline"></span>
                     <p>Ex, consequuntur, maxime. Quidem perspiciatis facere obcaecati facilis architecto, repudiandae cum neque nulla voluptas consectetur fugiat!</p>
                 </section>
                 <section class="section3">
                     <div class="menu-icon"></div>
                     <h2>Общение</h2>
+                    <span class="underline"></span>
                     <p>Eius praesentium iusto, qui, esse optio, reiciendis, assumenda cumque facilis blanditiis dolor soluta. Similique quisquam, quas.</p>
                 </section>
             </div>
             <div class="wrapper mobile">
                 <article class="mobile-article">
                     <h1 class="mobile-article-header">Представляем мобильную версию нашего сайта</h1>
+                    <span class="underline"></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, repellat, magnam unde doloribus tenetur consequatur, laboriosam voluptate perspiciatis dolore error possimus minima nulla alias! Magni facere, quis. Sint nulla sunt doloribus illum impedit explicabo pariatur magni excepturi beatae voluptates provident nam laboriosam animi, sequi, molestiae. Ipsa esse corrupti tempore. Repellat quos consequatur omnis accusantium itaque enim voluptatem, nam fugit veritatis alias perspiciatis asperiores iure beatae. Eos facere alias assumenda nam possimus similique velit architecto, placeat cupiditate repellendus. Cupiditate eos quas earum sunt necessitatibus suscipit sapiente.</p>
                     <a class="app-store" href="#">app-store</a>
                     <a class="google-play" href="#">google-play</a>
@@ -78,17 +90,18 @@
             </div>
             <div class="wrapper meals"> 
                 <h2 class="meals-header">Простмотр по блюдам</h2>
+                <span class="underline"></span>
                 <div class="meals-menu">
-                    <a href="" class="meal-1"><span class="recipes">25 Рецептов</span><br>Итальянские</a>
-                    <a href="" class="meal-2"><span class="recipes">25 Рецептов</span><br>Индийские</a>
-                    <a href="" class="meal-3"><span class="recipes">25 Рецептов</span><br>Французкие</a>
-                    <a href="" class="meal-4"><span class="recipes">25 Рецептов</span><br>Стейки</a>
-                    <a href="" class="meal-5"><span class="recipes">25 Рецептов</span><br>Морские</a>
-                    <a href="" class="meal-6"><span class="recipes">25 Рецептов</span><br>Суши</a>
-                    <a href="" class="meal-7"><span class="recipes">25 Рецептов</span><br>Мексиканские</a>
-                    <a href="" class="meal-8"><span class="recipes">25 Рецептов</span><br>Китайские</a>
-                    <a href="" class="meal-9"><span class="recipes">25 Рецептов</span><br>Пицца</a>
-                    <a href="" class="meal-10"><span class="recipes">25 Рецептов</span><br>Американские</a>
+                    <a href="" class="meal-1 js-slide-left"><span class="recipes">25 Рецептов</span><br>Итальянские</a>
+                    <a href="" class="meal-2 js-slide-right"><span class="recipes">25 Рецептов</span><br>Индийские</a>
+                    <a href="" class="meal-3 js-slide-left"><span class="recipes">25 Рецептов</span><br>Французкие</a>
+                    <a href="" class="meal-4 js-slide-right"><span class="recipes">25 Рецептов</span><br>Стейки</a>
+                    <a href="" class="meal-5 js-slide-left"><span class="recipes">25 Рецептов</span><br>Морские</a>
+                    <a href="" class="meal-6 js-slide-right"><span class="recipes">25 Рецептов</span><br>Суши</a>
+                    <a href="" class="meal-7 js-slide-left"><span class="recipes">25 Рецептов</span><br>Мексиканские</a>
+                    <a href="" class="meal-8 js-slide-right"><span class="recipes">25 Рецептов</span><br>Китайские</a>
+                    <a href="" class="meal-9 js-slide-left"><span class="recipes">25 Рецептов</span><br>Пицца</a>
+                    <a href="" class="meal-10 js-slide-right"><span class="recipes">25 Рецептов</span><br>Американские</a>
                 </div>
                 <div class="wrapper statistic-block">
                     <div class=statistic>
@@ -113,16 +126,18 @@
                     </div>
                 </div> 
             </div>    
-       </main>
+        </main>
 
-       <footer class="main-footer">
-           <div class="wrapper footer">
-               <div class="copyrights">&copy;2015 Нямка. Все права защищены.</div>
-               <div class="developer">
+        <footer class="main-footer">
+            <div class="wrapper footer">
+                <div class="copyrights">&copy;2015 Нямка. Все права защищены.</div>
+                <div class="developer">
                    Дизайн: <a class="site" href="#">www.somedisigner.com</a>
-               </div>
-           </div>  
-       </footer> 
-       <script src="./js/scripts.js"></script>
+                </div>
+            </div>  
+        </footer> 
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.boxloader.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

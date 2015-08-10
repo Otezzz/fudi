@@ -5,12 +5,12 @@
 
 @import 
     "base/typography.scss",
-	"base/common-styles.scss";
+	"base/common-styles.scss",
+    "base/grid.scss";
 
 @import 
     "layout/footer.scss",
     "layout/forms.scss",
-    "layout/grid.scss",
     "layout/header.scss",
     "layout/navigation.scss";
 

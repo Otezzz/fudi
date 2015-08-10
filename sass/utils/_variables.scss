@@ -12,6 +12,7 @@ $grey-text:                #a5a5a5;
 $light-text:               lighten($grey-text, 10%);
 $headers-color:            #000;
 $bg-wrapper:               #f7f7f7;
+$underline:                red;
 
 // === Typography
 
@@ -25,6 +26,7 @@ $font-size-small:          14px;
 $font-size-h1:             50px;
 $font-size-h1-article:     18px;
 $font-size-h2:             18px; 
+$font-size-mobile:         17px;
 
 $line-height-base:         floor(($font-size-base * 1.6));
 $line-height-h2:           floor(($font-size-h2 * 1.7));

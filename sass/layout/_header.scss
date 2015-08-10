@@ -4,8 +4,9 @@
     justify-content: center;
     align-items: center;
     min-height: 880px;
-    margin-bottom: 35px;
+    margin-bottom: 100px;
     background: url(../img/main-image.png) no-repeat;
+    background-size: cover;
     color: $white-text;
 }
 .logo {
@@ -22,6 +23,23 @@
     &:hover{
         
     }
+}
+.enter-mobile {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -60px;
+    width: 120px;
+    height: 50px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: $main-menu-btn;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 50px;
+    border-radius: 4px;
 }
 
 
